@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Dom Casmurro",
+        "autor": "Machado de Assis",
+        "genero": "Romance",
+        "disponivel": false
+    },
+     {
+        "nome": "A Mão e a Luva",
+        "autor": "Machado de Assis",
+        "genero": "Romance",
+        "disponivel": false
+    }
+]
