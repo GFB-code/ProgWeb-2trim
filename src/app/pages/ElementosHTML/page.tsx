@@ -3,6 +3,12 @@ export default function ElementosHTML(){
         <div>
             <header className="text-3xl text-center font-extrabold mb-4 mt-2">Elementos HTML</header>
             <main className="flex flex-col gap-2 mx-3">
+                <section>
+                    <header className="text-2xl font-bold mb-2">Tags HTML:</header>
+                    <p>Tags básicas do html, essenciais para a criação e estruturação de uma página web simples.
+                    </p>
+                </section>
+                <span className="border border-neutral-700 my-2"/>
                 {/*div*/}
                 <div className="border-3 rounded px-1">
                     <h1 className="font-bold text-xl pl-3">div</h1>
@@ -30,7 +36,7 @@ export default function ElementosHTML(){
                 <span className="border border-neutral-700 my-3 mb-2"/>
                 {/*TAGS SEMÂNTICAS*/}
                 <section>
-                    <header className="text-2xl mb-2">Tags Semânticas:</header>
+                    <header className="text-2xl font-bold mb-2">Tags Semânticas:</header>
                     <p>Tags que não apenas são usadas pela função, mas pela legibilidade do código, tanto para os programadores que precisam modificar o código quanto para os navegadores, que usam as tags semânticas para coisas como o leitor da página, aumentando a acessibilidade da página.
                     </p>
                 </section>
@@ -61,7 +67,7 @@ export default function ElementosHTML(){
                 <span className="border border-neutral-700 my-3 mb-2"/>
                 {/*TAGS NEXT.JS*/}
                 <section>
-                    <header className="text-2xl mb-2">Tags do Next.js:</header>
+                    <header className="text-2xl font-bold mb-2">Tags do Next.js:</header>
                     <p>Tags próprias do Next.js que precisam ser importadas e cujas funções fazem uma melhor interação entre o framework
                     </p>
                 </section>
@@ -71,12 +77,12 @@ export default function ElementosHTML(){
                     <h1 className="font-bold text-xl pl-3">Image</h1>
                     <p><strong>Image</strong> é uma tag vazia, com seu funcionamento sendo ditado pelos seus atributos principais:</p>
                     <ul className="font-semibold pl-2 text-neutral-400 my-2">
-                        <li>src <span className="font-normal text-white">- atributo que recebe a imagem a ser mostrada como argumento, seja em URL ou em forma de caminho</span></li>
-                        <li>alt <span className="font-normal text-white">- caso haja falha no carregamento da imagem ou o navegador esteja em um modo de leitura, vai mostrar o texto dado como argumento no lugar da imagem</span></li>
-                        <li>width <span className="font-normal text-white">- atributo que define a largura da imagem. Caso o height não seja definido, a imagem terá a altura igual à largura. A largura e altura podem ser definidas via CSS.</span></li>
+                        <li>src <span className="font-normal text-black dark:text-white">- atributo que recebe a imagem a ser mostrada como argumento, seja em URL ou em forma de caminho</span></li>
+                        <li>alt <span className="font-normal text-black dark:text-white">- caso haja falha no carregamento da imagem ou o navegador esteja em um modo de leitura, vai mostrar o texto dado como argumento no lugar da imagem</span></li>
+                        <li>width <span className="font-normal text-black dark:text-white">- atributo que define a largura da imagem. Caso o height não seja definido, a imagem terá a altura igual à largura. A largura e altura podem ser definidas via CSS.</span></li>
                     </ul>
-                    <p className="text-sm text-yellow-100"><strong>Atenção:</strong> para que o Next.js aceite a imagem de <strong className="text-neutral-400">src</strong> de uma URL, é necessário dizer ao Next que o link é confiável. Uma maneira de fazer isto é abrir o arquivo <strong className="text-violet-300">next.config.ts</strong>, localizado na pasta do seu projeto Next, acima do <strong className="text-yellow-300">package.json</strong>, e adicionar, dentro da constante <strong className="text-blue-300">nextConfig</strong>, o código abaixo:</p>
-                    <div className="border-2 border-gray-700 bg-gray-800 pl-1 py-2 my-2">
+                    <p className="text-sm text-yellow-700 dark:text-yellow-100"><strong>Atenção:</strong> para que o Next.js aceite a imagem de <strong className="text-neutral-400">src</strong> de uma URL, é necessário dizer ao Next que o link é confiável. Uma maneira de fazer isto é abrir o arquivo <strong className="text-violet-500">next.config.ts</strong>, localizado na pasta do seu projeto Next, acima do <strong className="text-yellow-600">package.json</strong>, e adicionar, dentro da constante <strong className="text-blue-500">nextConfig</strong>, o código abaixo:</p>
+                    <div className="border-2 bg-gray-700 border-zinc-800 text-green-200 dark:text-white dark:border-gray-700 dark:bg-gray-800 pl-1 py-2 my-2">
                         <p>
                         {"images:{"} <br />
                         <span className="pl-2">{"remotePatterns: ["} <br /> </span>
@@ -102,10 +108,10 @@ export default function ElementosHTML(){
                 <div className="border-3 rounded px-1">
                     <h1 className="font-bold text-xl pl-3">Link</h1>
                     <p><strong>Link</strong> é uma tag que pode servir pra dois propósitos semelhantes: Linkar uma outra página da web ou direcionar para outra página da próprio aplicação em que se trabalha por meio do roteamento, renderizando as páginas pelo lado do servidor e facilitando a navegação. Porém, ele, semelhante a tag Image, também precisa de atributos específicos para funcionar como desejado, com a diferença sendo que <strong>Link</strong> pede apenas um atributo para funcionar, este sendo:</p>
-                    <ul className="font-semibold pl-2 text-neutral-400 mb-2">
-                        <li>href <span className="font-normal">- atributo que guarda o link para uma outra página da web ou um caminho para uma página da aplicação via roteamento</span></li>
+                    <ul className="font-semibold pl-2 text-neutral-400 mb-2 pt-2">
+                        <li>href <span className="font-normal text-black dark:text-white">- atributo que guarda o link para uma outra página da web ou um caminho para uma página da aplicação via roteamento</span></li>
                     </ul>
-                    <p className="text-yellow-100 text-sm"> Por exemplo: dentro da pasta <strong className="text-red-400">app</strong> está localizado o <strong className="text-blue-600">page.tsx</strong>, certo? Caso você crie uma pasta dentro de <strong className="text-red-400">app</strong> chamada <strong className="text-gray-400">Pag2</strong> e faça toda uma página dentro de um <strong className="text-blue-600">page.tsx</strong> no interior da mesma, você pode usar a tag <strong className="text-green-300">Link</strong> na página original para que ela vá até <strong className="text-gray-400">Pag2</strong> e ela seja renderizada pondo como argumento em <strong className="text-zinc-400">href</strong> assim: <span className="italic text-mist-300">"/Pag2"</span></p>
+                    <p className="text-yellow-700 dark:text-yellow-100 text-sm"> Por exemplo: dentro da pasta <strong className="text-red-500">app</strong> está localizado o <strong className="text-blue-600">page.tsx</strong>, certo? Caso você crie uma pasta dentro de <strong className="text-red-500">app</strong> chamada <strong className="text-gray-600 dark:text-gray-400">Pag2</strong> e faça toda uma página dentro de um <strong className="text-blue-600">page.tsx</strong> no interior da mesma, você pode usar a tag <strong className="text-green-600">Link</strong> na página original para que ela vá até <strong className="text-gray-600 dark:text-gray-400">Pag2</strong> e ela seja renderizada pondo como argumento em <strong className="text-zinc-600 dark:text-zinc-400">href</strong> assim: <span className="italic text-mist-700 dark:text-mist-300">"/Pag2"</span></p>
                 </div>
             </main>
         </div>

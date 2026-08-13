@@ -9,7 +9,7 @@ export default function Home() {
         <main className="flex flex-start gap-2 mt-2 text-lg text-center">
           {/*Elementos HTML*/}
           <div className="flex-1 border-2 rounded">
-            <header className="font-bold">Elementos HTML</header>
+            <header className="font-bold"> <Link href={"/pages/ElementosHTML"} className="hover:underline">Elementos HTML</Link></header>
             <section className="text-justify text-base px-2 ">
               <p>Explicação e contextualização sobre como alguns elementos essenciais para uma página HTML, incluindo:</p>
               <ul className="pl-3 py-1 font-bold">
@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           {/*Básico Next.js*/}
           <div className="border-2  flex-1 rounded">
-            <header className="font-bold">Básico Next</header>
+            <header className="font-bold"> <Link href={"/pages/BaseNextjs"} className="hover:underline">Básico Next</Link></header>
             <section className="text-justify text-base px-2">
               <p>Explicação sobre o básico recomendado para utilizar o Next.JS e algumas funções úteis no desenvolvimento, como exemplo:</p>
               <ul className="pl-3 py-1 font-bold">
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           {/*Códigos exemplos*/}
           <div className="border-2 flex-1 rounded">
-            <header className="font-bold">Códigos exemplos</header>
+            <header className="font-bold"><Link href={"/pages/CodeExmp"} className="hover:underline">Códigos exemplos</Link></header>
             <section className="text-justify text-base px-2 mt-1">
               <p>Exemplos de códigos para melhor entendimento de como as coisas são usadas na prática</p>
             </section>
