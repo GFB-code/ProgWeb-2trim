@@ -3,6 +3,7 @@ export default function ElementosHTML(){
         <div>
             <header className="text-3xl text-center font-extrabold mb-4 mt-2">Elementos HTML</header>
             <main className="flex flex-col gap-2 mx-3">
+                {/*TAGS HTML*/}
                 <section>
                     <header className="text-2xl font-bold mb-2">Tags HTML:</header>
                     <p>Tags básicas do html, essenciais para a criação e estruturação de uma página web simples.
