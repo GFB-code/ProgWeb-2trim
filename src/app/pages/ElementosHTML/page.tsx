@@ -1,3 +1,4 @@
+import Imagecode from "@/content/Imagecode"
 export default function ElementosHTML(){
     return(
         <div>
@@ -83,26 +84,7 @@ export default function ElementosHTML(){
                         <li>width <span className="font-normal text-black dark:text-white">- atributo que define a largura da imagem. Caso o height não seja definido, a imagem terá a altura igual à largura. A largura e altura podem ser definidas via CSS.</span></li>
                     </ul>
                     <p className="text-sm text-yellow-700 dark:text-yellow-100"><strong>Atenção:</strong> para que o Next.js aceite a imagem de <strong className="text-neutral-400">src</strong> de uma URL, é necessário dizer ao Next que o link é confiável. Uma maneira de fazer isto é abrir o arquivo <strong className="text-violet-500">next.config.ts</strong>, localizado na pasta do seu projeto Next, acima do <strong className="text-yellow-600">package.json</strong>, e adicionar, dentro da constante <strong className="text-blue-500">nextConfig</strong>, o código abaixo:</p>
-                    <div className="border-2 bg-gray-700 border-zinc-800 text-green-200 dark:text-white dark:border-gray-700 dark:bg-gray-800 pl-1 py-2 my-2">
-                        <p>
-                        {"images:{"} <br />
-                        <span className="pl-2">{"remotePatterns: ["} <br /> </span>
-                        <span className="pl-4">{"{"} <br /></span>
-                        <span className="pl-8">{"protocol:'https',"} <br /> </span>
-                        <span className="pl-8">{"hostname:'**',"} <br /> </span>
-                        <span className="pl-8">{"port:'',"} <br /> </span>
-                        <span className="pl-8">{"pathname:'**',"} <br /></span>
-                        <span className="pl-4">{"},"} <br /></span>
-                        <span className="pl-4">{"{"} <br /></span>
-                        <span className="pl-8">{"protocol:'http',"} <br /></span>
-                        <span className="pl-8">{"hostname:'**',"} <br /></span>
-                        <span className="pl-8">{"port:'',"} <br /> </span>
-                        <span className="pl-8">{"pathname:'**',"} <br /></span>
-                        <span className="pl-4">{"}"} <br /></span>
-                        <span className="pl-2">{"]"} <br /></span>
-                        {"}"}
-                        </p>
-                    </div>
+                    <Imagecode></Imagecode>
                     <p className="font-semibold">Atente-se ao fato de que o código permitirá que qualquer URL de conexão http e https seja aceito como imagem, então atente-se com os links escolhidos </p>
                 </div>
                 {/*Link*/}
